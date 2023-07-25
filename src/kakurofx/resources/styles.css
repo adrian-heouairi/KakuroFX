@@ -1,0 +1,97 @@
+Button, Label {
+	-fx-font-size: 18px;
+}
+
+:focused { /* L'élément actuellement sélectionné sera encadré en bleu */
+	-fx-border-color: deepskyblue;
+}
+
+WhiteTile, GrayTile, BlackTile {
+	-fx-pref-width: 300px; /* Hack pour que les cases prennent bien toute la place */
+	-fx-pref-height: 300px;
+}
+
+WhiteTile {
+	-fx-background-color: white;
+	
+	-fx-alignment: center; /* Centre le texte */
+	-fx-font-size: 35px;
+	
+	-fx-border-color: black;
+}
+
+WhiteTile:focused {
+	-fx-border-width: 3px;
+}
+
+GrayTile {
+	-fx-background-color: #555560;
+	
+	-fx-border-color: black;
+}
+
+BlackTile {
+	-fx-background-color: black;
+	
+	-fx-border-color: #555560;
+}
+
+BlackTile Line {
+	-fx-stroke: white;
+	-fx-stroke-width: 2px;
+}
+
+BlackTile Label { /* Met le texte dans les cases noires en blanc */
+	-fx-text-fill: white;
+	-fx-font-size: 25px;
+}
+
+HBox { /* Centre et espace les boutons disposés en ligne */
+	-fx-alignment: center;
+	
+	-fx-spacing: 10px;
+	
+	-fx-background-color: white;
+}
+
+GridPane {
+	-fx-border-color: black;
+}
+
+VBox {
+	-fx-alignment: center;
+	
+	-fx-padding: 15px;
+	-fx-spacing: 15px;
+	
+	-fx-background-color: white;
+}
+
+Button {
+	-fx-background-color: white;
+	
+	-fx-border-color: black;
+	-fx-border-width: 2px;
+}
+
+Button:hover, WhiteTile:hover {
+	-fx-background-color: #EEEEEE;
+}
+
+Button:pressed, WhiteTile:pressed {
+	-fx-background-color: #CCCCCC;
+}
+
+#titleScreen, #difficultyScreen {
+	-fx-background-color: white;
+	
+	-fx-padding: 50px;
+}
+
+#titleLabel, #difficultyLabel {
+	-fx-font-size: 100px;
+}
+
+#userManualText {
+	-fx-wrap-text: true;
+}

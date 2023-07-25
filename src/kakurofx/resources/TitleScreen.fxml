@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="kakurofx.TitleScreenController" fx:id="titleScreen">
+	<top>
+		<Label text="KakuroFX" fx:id="titleLabel" BorderPane.alignment="CENTER" />
+	</top>
+	<center>
+		<VBox>
+			<Button text="Jouer" onAction="#goToDifficultyScreen" />
+			<Button text="Créer une grille" onAction="#goToCreationScreen" />
+			<Button text="Grilles sauvegardées" onAction="#goToSavedGridsScreen" />
+			<Button text="Manuel d'utilisation" onAction="#goToUserManualScreen" />
+			<Button text="Quitter" onAction="#quit" />
+		</VBox>
+	</center>
+	<bottom>
+		<Label fx:id="javaVersionLabel" BorderPane.alignment="CENTER" />
+	</bottom>
+</BorderPane>

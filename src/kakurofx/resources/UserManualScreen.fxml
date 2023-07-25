@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="kakurofx.UserManualScreenController">
+	<Label text="Comment remplir une grille de kakuro ?" />
+	
+	
+<Label fx:id="userManualText" text="Le but du jeu est de remplir toutes
+les cases blanches de la grille en composant la somme
+indiquée dans les cases noires avec les chiffres de 1 à 9.
+Un chiffre ne peut être utilisé qu’une seule fois dans une somme." />
+	
+	
+	<Button text="Retour" onAction="#goToTitleScreen" />
+</VBox>

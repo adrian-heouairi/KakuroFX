@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="kakurofx.DifficultyScreenController" fx:id="difficultyScreen">
+	<top>
+		<Label text="Difficulté" fx:id="difficultyLabel" BorderPane.alignment="CENTER" />
+	</top>
+	<center>
+		<VBox>
+			<Button onAction="#goToEasy" text="Facile" />
+			<Button onAction="#goToMedium" text="Moyen" />
+			<Button onAction="#goToHard" text="Difficile" />
+			<Button onAction="#goToTitleScreen" text="Retour" />
+		</VBox>
+	</center>
+</BorderPane>
+

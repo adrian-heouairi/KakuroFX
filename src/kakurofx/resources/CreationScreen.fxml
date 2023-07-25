@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.StackPane?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="kakurofx.CreationScreenController" fx:id="gameScreen">
+	<HBox>
+		<Button fx:id="save" text="Sauvegarder" />
+		<Button fx:id="resetButton" text="Effacer" onAction="#reset" />
+		<Button fx:id="quitButton" text="Quitter" onAction="#goToTitleScreen" />
+	</HBox>
+	<StackPane fx:id="gridPaneContainer" VBox.vgrow="ALWAYS"/>
+</VBox>
+
